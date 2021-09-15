@@ -1,0 +1,30 @@
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgb(128, 128, 128);
+    padding: 10px;
+}
+.year{
+    color: black;
+    font-size: 16pt;
+    font-family: Impact;
+}
+.link-with-image{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: black;
+}
+.link-with-image>.title{
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+.link-with-image>img{
+    height: 50px;
+}
+.link-with-image>.github{
+    height: 25px;
+}
