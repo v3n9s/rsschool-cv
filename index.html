@@ -6,34 +6,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/left_column.css">
+  <link rel="stylesheet" href="styles/right_column.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/list_with_photos.css">
+  <link rel="stylesheet" href="styles/skills_grid.css">
+  <link rel="stylesheet" href="styles/code_example.css">
   <title>My CV</title>
 </head>
 
 <body>
   <main class="container">
-    <section class="about">
-      <h2>Veniamin Shvets</h2>
-      <h3 class="title">About me</h3>
-      <ul class="list-with-photos">
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Belarus_%281918%2C_1991%E2%80%931995%29.svg" alt="Flag of Belarus"><p>Minsk, Belarus</p></li>
-        <li><img src="https://rs.school/images/rs_school_js.svg" alt="Rolling Scopes School logo"><p>currently studying in Rolling Scopes School</p></li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Flag of United Kingdom"><p>English level: pre-intermediate</p></li>
-      </ul>
-      <h3 class="title">Contacts</h3>
-      <ul class="list-with-photos">
-        <li><img src="media/discord.svg" alt="Discord logo"><p>venyaS#7349</p></li>
-      </ul>
-      <h3 class="title">Skills</h3>
-      <ul class="list-with-photos">
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript logo"><p>JavaScript</p></li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo"><p>HTML</p></li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 logo"><p>CSS</p></li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular logo"><p>Angular</p></li>
-        <li><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo"><p>Git</p></li>
-      </ul>
-    </section>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar-links" data-navbar="hidden">
+          <li class="contacts"><a href="#contacts">Contacts</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#code-example">Code example</a></li>
+        </ul>
+        <div class="rss">
+          <img src="https://rs.school/images/rs_school_js.svg" alt="Rolling Scopes School logo">
+        </div>
+        <div class="toggle-navbar" onclick="toggleNavbar()">
+          <img src="media/list.svg" alt="menu">
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <section class="left-column">
+        <div class="avatar-and-name">
+          <div class="avatar">
+            <img src="media/avatar.png" alt="Avatar">
+          </div>
+          <h1 class="name">Veniamin Shvets</h1>
+          <h2 class="dev">Front-end developer</h2>
+        </div>
+        <div class="about">
+          <div class="title"></div>
+          <ul class="list-with-photos">
+            <li>
+              <pre class="flag">
+#ffffff
+#cc0000
+#ffffff</pre>
+              <p>Minsk, Belarus</p>
+            </li>
+            <li>
+              <img src="https://rs.school/images/rs_school_js.svg" alt="Rolling Scopes School logo">
+              <p>Currently studying in Rolling Scopes School</p>
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Flag of United Kingdom">
+              <p>English level: Intermediate (Practice in computer games)</p>
+            </li>
+          </ul>
+          <h3 class="title" id="contacts">Contacts</h3>
+          <ul class="list-with-photos">
+            <li>
+              <a>
+                <img src="media/discord.svg" alt="Discord logo">
+                <p>venyaS#7349</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/veniamin-shvets-11154021b/">
+                <img src="media/linkedin.svg" alt="LinkedIn logo">
+                <p>Veniamin Shvets</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/v3n9s">
+                <img src="media/github.svg" alt="GitHub logo">
+                <p>v3n9s</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <aside class="right-column">
+        <h3 class="title" id="skills">Skills</h3>
+        <ul class="skills-grid">
+          <li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript logo">
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo">
+            <p>HTML</p>
+          </li>
+          <li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 logo">
+            <p>CSS</p>
+          </li>
+          <li>
+            <img src="media/nodejs.ico" alt="Node.js logo">
+            <p>Node.js</p>
+          </li>
+          <li>
+            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo">
+            <p>Git</p>
+          </li>
+        </ul>
+        <h3 class="title" id="about">About me</h3>
+        <p class="text-about">Hello! I am beginner Front-end developer. My aim is to develop my programming skills to become Full stack developer on ME[R|A]N.</p>
+        <h3 class="title" id="code-example">Code examples</h3>
+        <pre class="code-highlight">
+<span class="reserved">function</span> <span class="object">cache</span>(<span class="variable">func</span>) {
+  <span class="reserved">let</span> <span class="variable">cached</span> = {};
+  <span class="construction">return</span> <span class="reserved">function</span>(...<span class="variable">args</span>) {
+    <span class="reserved">let</span> <span class="variable">key</span> = <span class="object">JSON</span>.<span class="object">stringify</span>(<span class="variable">args</span>);
+    <span class="construction">if</span>(!(<span class="variable">key</span> <span class="reserved">in</span> <span class="variable">cached</span>)) <span class="variable">cached</span>[<span class="variable">key</span>] = <span class="object">func</span>(...<span class="variable">args</span>);
+    <span class="construction">return</span> <span class="variable">cached</span>[<span class="variable">key</span>];
+  }
+}</pre>
+        <pre class="code-highlight">
+<span class="reserved">function</span> <span class="object">compose</span>(...<span class="variable">funcs</span>) {
+  <span class="construction">return</span> (<span class="variable">n</span>) <span class="construction">=></span> {
+    <span class="construction">for</span>(<span class="reserved">let</span> <span class="variable">i</span> = <span class="object">funcs</span>.<span class="object">length</span>-<span class="reserved">1</span>;<span class="variable">i</span> >= <span class="reserved">0</span>;<span class="variable">i</span>--){
+      <span class="variable">n</span> = <span class="variable">funcs</span>[<span class="variable">i</span>](<span class="variable">n</span>);
+    }
+    <span class="construction">return</span> <span class="variable">n</span>;
+  }
+}</pre>
+      </aside>
+    </div>
     <footer class="main-footer">
       <a href="https://github.com/v3n9s" class="link-with-image">
         <img class="github" src="media/github.svg" alt="GitHub logo">
@@ -41,10 +140,40 @@
       </a>
       <time class="year" datetime="2021-09-15">2021</time>
       <a href="https://rs.school/js/" class="link-with-image">
-        <img src="https://rs.school/images/rs_school_js.svg" alt="Rolling Scopes School logo">
+        <img class="rsschool" src="https://rs.school/images/rs_school_js.svg" alt="Rolling Scopes School logo">
       </a>
     </footer>
   </main>
+  <script>
+    let requirements = {
+      'Валидная вёрстка': 10,
+      'Семантическая вёрстка': 20,
+      'CSS стили': 10,
+      'Контент в горизонтально центрируемом блоке, фоновый цвет на всю страницу': 10,
+      'Адаптивная вёрстка': 10,
+      'Адаптивное бургер-меню': 10,
+      'Аватарка': 10,
+      'Контакты в виде списка ul > li': 10,
+      'Контакты, информация о себе, перечень навыков, образование, уровень английского': 10,
+      'Пример кода': 10,
+      'Выполненные проекты': 0,
+      'CV на английском языке': 10,
+      'Выполнены требования к Pull Request': 10,
+      'Видеорезюме': 0,
+      'Дизайн': 10
+    }
+    console.log('Самооценка: ' + Object.values(requirements).reduce((acc, val) => acc + val) + ' из 160', requirements);
+    console.log('бургер-меню появляется на более низких разрешениях');
+
+    window.onload = () => {
+      document.querySelector('.container').style.opacity = '1';
+    }
+
+    setTimeout(() => {
+      document.querySelector('.container').style.opacity = '1';
+    }, 500);
+  </script>
+  <script src="scripts/navbar.js"></script>
 </body>
 
 </html>

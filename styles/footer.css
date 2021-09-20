@@ -3,28 +3,36 @@
     justify-content: space-between;
     align-items: center;
     border-top: 2px solid rgb(128, 128, 128);
-    padding: 10px;
+    padding: 0px 10px;
 }
-.year{
+.main-footer .year{
     color: black;
     font-size: 16pt;
     font-family: Impact;
 }
-.link-with-image{
+.main-footer .link-with-image{
     display: flex;
     align-items: center;
     height: 50px;
     text-decoration: none;
     color: black;
 }
-.link-with-image>.title{
+.main-footer .link-with-image>.title{
     margin: 0;
     margin-left: 10px;
     padding: 0;
 }
-.link-with-image>img{
-    height: 50px;
+.main-footer .link-with-image>img{
+    height: 30px;
 }
-.link-with-image>.github{
+.main-footer .link-with-image>.github{
     height: 25px;
+}
+@media (min-width: 769px){
+    .main-footer{
+        padding: 10px 20px;
+    }
+    .main-footer .link-with-image>.rsschool{
+        height: 50px;
+    }
 }
