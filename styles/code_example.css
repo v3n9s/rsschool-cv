@@ -1,0 +1,33 @@
+.code-highlight{
+    font-family: monospace;
+    color: black;
+    margin: 5px 0px 0px;
+    font-size: 14pt;
+    word-break: break-all;
+    white-space: pre-wrap;
+    border: 2px solid rgb(210, 210, 210);
+    background:rgb(210, 210, 210);
+    border-radius: 5px;
+}
+.code-highlight .variable{
+    color: #066100;
+}
+.code-highlight .reserved{
+    color: #0051a5;
+}
+.code-highlight .object{
+    color: #824200;
+}
+.code-highlight .construction {
+    color: #af1d1d;
+}
+@media (min-width: 580px){
+    .code-highlight{
+        font-size: 16pt;
+    }
+}
+@media (min-width: 769px){
+    .code-highlight{
+        font-size: 18pt;
+    }
+}

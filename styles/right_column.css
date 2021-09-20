@@ -1,0 +1,8 @@
+.right-column{
+    border-top: 2px solid rgb(150, 150, 150);
+    padding: 0px 10px 5px;
+}
+.right-column>.title{
+    text-align: center;
+    border-bottom: 2px solid rgb(128, 128, 128);
+}

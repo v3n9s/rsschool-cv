@@ -1,0 +1,57 @@
+.left-column{
+    background: rgb(150, 150, 150);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    font-family: Arial;
+}
+.left-column>.avatar-and-name{
+    flex: 0;
+}
+.left-column>.avatar-and-name>.avatar{
+    align-self: center;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 200px;
+}
+.left-column>.avatar-and-name>.avatar>img{
+    width: 100%;
+    border-radius: 100%;
+}
+.left-column>.avatar-and-name>.name,
+.left-column>.avatar-and-name>.dev{
+    text-align: center;
+}
+.left-column>.avatar-and-name>.dev{
+    margin: 5px 0px 0px 0px;
+    font-size: 12pt;
+}
+.left-column>.about{
+    margin: 0px;
+    flex: 2;
+}
+.left-column>.about>.title{
+    margin: 10px 0px 0px;
+    text-align: center;
+    border-bottom: 2px solid rgb(100, 100, 100);
+}
+@media (min-width: 580px){
+    .left-column{
+        flex-direction: row;
+        padding: 10px 10px 20px;
+    }
+    .left-column>.avatar-and-name>.avatar{
+        min-width: 230px;
+        max-width: 230px;
+    }
+}
+@media (min-width: 769px){
+    .left-column{
+        flex-direction: column;
+        padding: 20px 20px 0px;
+    }
+    .left-column>.avatar-and-name>.avatar{
+        max-width: 250px;
+    }
+}
