@@ -1,0 +1,81 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    min-height: 40px;
+}
+.navbar>.toggle-navbar{
+    padding: 0px;
+    position: absolute;
+    right: 2px;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+.navbar>.toggle-navbar>img{
+    width: 100%;
+}
+.navbar>.toggle-navbar:hover{
+    cursor: pointer;
+}
+.navbar>.rss{
+    position: absolute;
+    left: 0;
+}
+.navbar>.rss>img{
+    height: 36px;
+    padding: 2px;
+}
+.navbar-links{
+    list-style: none;
+    margin: 0px;
+    padding: 35px 0px 15px 0px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 5px;
+    width: 100%;
+    background: rgb(185, 185, 185);
+}
+.navbar-links[data-navbar=hidden]{
+    display: none;
+}
+.navbar-links>.contacts{
+    display: flex;
+}
+.navbar-links>li{
+    display: flex;
+    justify-content: center;
+}
+.navbar-links>li>a{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(48, 48, 48);
+    padding: 10px;
+}
+@media (min-width: 580px){
+    .navbar>.toggle-navbar,
+    .navbar>.rss{
+        display: none;
+    }
+    .navbar-links{
+        flex-direction: row;
+        display: flex;
+        position: relative;
+        padding: 0px;
+    }
+    .navbar-links[data-navbar=shown],
+    .navbar-links[data-navbar=hidden]{
+        display: flex;
+    }
+    .navbar-links>.contacts{
+        display: none;
+    }
+}
+@media (min-width: 769px){
+    .navbar{
+        display: none;
+    }
+}

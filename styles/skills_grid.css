@@ -1,0 +1,22 @@
+.skills-grid{
+    margin: 5px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    justify-items: start;
+    gap: 5px;
+    list-style: none;
+}
+.skills-grid>li{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills-grid>li>img{
+    width: 40px;
+    height: 40px;
+}
+.skills-grid>li>p{
+    margin: 0px 0px 0px 5px;
+}

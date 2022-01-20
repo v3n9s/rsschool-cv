@@ -1,0 +1,28 @@
+body{
+    font-family: Verdana;
+    background: rgb(230, 230, 230);
+}
+.container{
+    margin: 0px auto;
+    opacity: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0px;
+    max-width: 1024px;
+    background: rgb(185, 185, 185);
+    transition: opacity 0.25s linear;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 769px){
+    .content{
+        grid-template-columns: 300px 1fr;
+    }
+}
+@media (min-width: 1024px){
+    .container{
+        margin: 15px auto;
+    }
+}
